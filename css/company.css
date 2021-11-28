@@ -1,0 +1,112 @@
+/*top-img*/
+.top-img {
+  background: url(../img/mv.png);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-ttl {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-ttl h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.top-ttl p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*contact*/
+.top-contact {
+  background-color: #f5f6f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-contact-ttl {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.top-contact-desc {
+  font-family: sans-serif;
+  color: #333;
+  margin-top: 20px;
+}
+
+.top-contact-btn {
+  width: 200px;
+  padding: 10px;
+  text-decoration: none;
+  background: red;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin: 40px auto 0;
+}
+
+.top-contact-btn:hover {
+  background: #e83f5f;
+}
+
+.top-contact-list a {
+  background: #fff;
+  margin-top: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+/*company*/
+.company {
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+table {
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  width: 30%;
+  border-top: 1px solid #333;
+  padding: 20px 0;
+}
+
+td {
+  width: 70%;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=company.css.map */

@@ -1,0 +1,76 @@
+/*top-img*/
+.top-img {
+  background: url(../img/mv.png);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-ttl {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-ttl h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.top-ttl p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*contact-form*/
+.contact {
+  width: 85%;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.contact-form-item {
+  padding-top: 20px;
+  display: block;
+}
+
+label {
+  font-weight: bold;
+}
+
+.contact-form-submit {
+  width: 300px;
+  padding: 10px;
+  margin: 20px auto 0;
+  border: none;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.asterisk {
+  color: red;
+  font-weight: bold;
+}
+/*# sourceMappingURL=contact.css.map */

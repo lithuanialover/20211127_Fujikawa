@@ -1,0 +1,394 @@
+/*top-img*/
+.top-img {
+  background: url(../img/mv.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.top-ttl {
+  width: 85%;
+  margin: 0 auto;
+
+  .top-ttl-main {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .top-ttl-sub {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+/*top-concept*/
+.top-concept {
+  background: black;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.top-concept-text h2,
+p {
+  color: #fff;
+}
+
+.top-concept-text {
+  width: 85%;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    margin-top: 30px;
+  }
+}
+
+/*top-service*/
+.top-service {
+  width: 85%;
+  padding: 80px 0;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 769px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .top-service-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .top-service-item {
+      width: 49%;
+      margin-top: 20px;
+      margin-right: 5px;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .top-service-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      display: block;
+      /*display: block;を追記したら、縦一列に並んだ*/
+    }
+
+    .top-service-item {
+      width: 100%;
+      margin-top: 20px;
+      margin-right: 0px;
+    }
+  }
+
+  .top-service-btn {
+    width: 300px;
+    margin: 40px auto 0;
+    padding: 10px;
+    text-decoration: none;
+    background: red;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+
+    &:hover {
+      background: #e83f5f;
+    }
+  }
+}
+
+
+/*top-news*/
+.top-news {
+  background: black;
+  background-size: cover;
+  width: 100%;
+}
+
+.top-news-inner {
+  width: 85%;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.top-news-head {
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-news-btn {
+  width: 200px;
+  margin: right;
+  padding: 10px;
+  text-decoration: none;
+  background: red;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+
+  &:hover {
+    background: #e83f5f;
+  }
+}
+
+.top-news-list {
+  a {
+    background: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+      background: #c9c9c4;
+    }
+  }
+
+  h3 {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+}
+
+/*top-blog*/
+.top-blog {
+  width: 85%;
+  padding: 80px 0;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 769px) {
+    .top-blog-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .top-blog-item {
+      width: 30%;
+      margin-right: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .top-blog-item-date {
+      color: #333;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .top-blog-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .top-blog-item {
+      width: 100%;
+      margin-right: 0px;
+    }
+
+    img {
+      width: 100%;
+      color: inherit;
+    }
+
+    .top-blog-item-date {
+      color: #333;
+      padding-top: 20px;
+    }
+  }
+
+  .top-blog-btn {
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    background: red;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin: 40px auto 0;
+
+    &:hover {
+      background: #e83f5f;
+    }
+  }
+
+  .top-blog-list {
+    a {
+      background: #fff;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+    }
+
+    img:hover {
+      background: #c9c9c4;
+    }
+  }
+}
+
+/*top-compnay-rexruit-*/
+.top-company-recruit {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+
+  .top-company {
+    width: 50%;
+    text-align: center;
+    background-color: red;
+    font-weight: bold;
+    font-size: 24px;
+
+    &:hover {
+      background-color: #e83f5f;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      /* aが全体範囲を指定し、赤色全体をクリックできるように変更*/
+      width: 100%;
+      line-height: 10;
+    }
+  }
+
+  .top-recruit {
+    width: 50%;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    font-size: 24px;
+
+    &:hover {
+      background-color: dimgrey;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      /* aが全体範囲を指定し、黒色全体をクリックできるように変更*/
+      width: 100%;
+      line-height: 10;
+    }
+  }
+}
+
+/*contact*/
+.top-contact {
+  background-color: #f5f6f9;
+  padding: 80px 0;
+  text-align: center;
+
+  .wrap {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .top-contact-ttl {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #333;
+  }
+
+  .top-contact-desc {
+    font-family: sans-serif;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  .top-contact-btn {
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    background: red;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin: 40px auto 0;
+
+    &:hover {
+      background: #e83f5f;
+    }
+  }
+
+  .top-contact-list a {
+    background: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+}
