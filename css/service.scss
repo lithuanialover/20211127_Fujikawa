@@ -40,15 +40,36 @@
   }
 }
 
-hr {
-  border-color: #333;
-  border-width: 1px 0 0 0;
+
+@media screen and (min-width: 769px) {
+.top-service-item{
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+img{
+  width: 290px;
+}
+
+.service-detail{
+  width: calc(100%-400px);
+  display: block;
+}
+}
+
+@media screen and (max-width: 768px) {
 .top-service-item {
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   img {
     width: 100%;
-    height: auto;
   }
 
   h3 {
@@ -61,6 +82,8 @@ hr {
     color: #333;
   }
 }
+}
+
 
 /*contact*/
 

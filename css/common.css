@@ -23,6 +23,9 @@ header {
   height: 70px;
   padding: 0 30px;
   background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -52,13 +55,20 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: block;
   }
   .top_nav li {
+    font-size: 14.5px;
     display: block;
     list-style: none;
     display: inline-block;
     margin-right: 30px;
+  }
+  .top_nav ul li:nth-child(7) {
+    margin-right: 0;
   }
   .menu {
     display: none;

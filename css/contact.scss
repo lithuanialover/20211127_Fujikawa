@@ -59,8 +59,13 @@ input {
   width: 100%;
 }
 
-textarea {
+textarea {/*下4つつけると、幅と高さが固定される*/
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 200px;
+  font-size: 16px;
+  /*スマホで、入力フォームの文字サイズが16pxを下回るフォントサイズに設定した場合、フォームに入力するときに画面が拡大されてしまう*/
 }
 
 .asterisk{

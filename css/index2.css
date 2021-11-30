@@ -94,11 +94,15 @@ p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    /*これと*/
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /*これで、margin-rightつかわずに対象のものを均等に並べる*/
   }
   .top-service .top-service-item {
     width: 49%;
     margin-top: 20px;
-    margin-right: 5px;
     display: block;
   }
 }
@@ -140,7 +144,7 @@ p {
   margin: 40px auto 0;
   padding: 10px;
   text-decoration: none;
-  background: red;
+  background: #cd0224;
   display: block;
   text-align: center;
   color: #fff;
@@ -184,7 +188,7 @@ p {
   margin: right;
   padding: 10px;
   text-decoration: none;
-  background: red;
+  background: #cd0224;
   display: block;
   text-align: center;
   color: #fff;
@@ -237,14 +241,18 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-top: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /*これと*/
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /*これで、margin-rightつかわずに対象のものを均等に並べる*/
   }
   .top-blog .top-blog-item {
-    width: 30%;
-    margin-right: 20px;
+    width: 32%;
   }
   .top-blog img {
     width: 100%;
@@ -284,7 +292,7 @@ p {
   width: 200px;
   padding: 10px;
   text-decoration: none;
-  background: red;
+  background: #cd0224;
   display: block;
   text-align: center;
   color: #fff;
@@ -328,7 +336,7 @@ p {
 .top-company-recruit .top-company {
   width: 50%;
   text-align: center;
-  background-color: red;
+  background-color: #cd0224;
   font-weight: bold;
   font-size: 24px;
 }
@@ -395,7 +403,7 @@ p {
   width: 200px;
   padding: 10px;
   text-decoration: none;
-  background: red;
+  background: #cd0224;
   display: block;
   text-align: center;
   color: #fff;

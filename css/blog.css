@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*top-img*/
 .top-img {
   background: url(../img/mv.png);
@@ -33,6 +34,20 @@
 }
 
 /*top-blog*/
+/*これがちゃんとできたやつ
+@media screen and (min-width: 769px) .top-blog .top-blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+*/
 .top-blog {
   width: 85%;
   padding: 80px 0;
@@ -49,27 +64,39 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    /*これと*/
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /*これで、margin-rightつかわずに対象のものを均等に並べる*/
   }
-  .top-blog .top-blog-item {
-    width: 30%;
-    margin-right: 20px;
-  }
-  .top-blog img {
-    width: 100%;
-  }
-  .top-blog .top-blog-item-date {
-    color: #333;
+  .top-blog .top-service-item {
+    width: 49%;
+    margin-top: 20px;
+    display: block;
   }
 }
 
+.top-blog .top-blog-item {
+  width: 30%;
+}
+
+.top-blog img {
+  width: 100%;
+}
+
+.top-blog .top-blog-item-date {
+  color: #333;
+}
+
 @media screen and (max-width: 768px) {
-  .top-blog .top-blog-list {
+  .top-blog-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -80,21 +107,21 @@
             align-items: flex-start;
     margin-top: 20px;
   }
-  .top-blog .top-blog-item {
+  .top-blog-item {
     width: 100%;
     margin-right: 0px;
   }
-  .top-blog img {
+  img {
     width: 100%;
     color: inherit;
   }
-  .top-blog .top-blog-item-date {
+  .top-blog-item-date {
     color: #333;
     padding-top: 20px;
   }
 }
 
-.top-blog .top-blog-btn {
+.top-blog-btn {
   width: 200px;
   padding: 10px;
   text-decoration: none;
@@ -106,11 +133,11 @@
   margin: 40px auto 0;
 }
 
-.top-blog .top-blog-btn:hover {
+.top-blog-btn:hover {
   background: #e83f5f;
 }
 
-.top-blog .top-blog-list a {
+.top-blog-list a {
   background: #fff;
   margin-top: 10px;
   display: -webkit-box;
@@ -123,7 +150,7 @@
   color: #333;
 }
 
-.top-blog .top-blog-list img:hover {
+.top-blog-list img:hover {
   background: #c9c9c4;
 }
 

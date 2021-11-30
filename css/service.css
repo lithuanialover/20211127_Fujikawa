@@ -44,24 +44,52 @@
   text-align: center;
 }
 
-hr {
-  border-color: #333;
-  border-width: 1px 0 0 0;
+@media screen and (min-width: 769px) {
+  .top-service-item {
+    padding: 20px 0;
+    border-top: 1px solid #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  img {
+    width: 290px;
+  }
+  .service-detail {
+    width: calc(100%-400px);
+    display: block;
+  }
 }
 
-.top-service-item img {
-  width: 100%;
-  height: auto;
-}
-
-.top-service-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.top-service-item p {
-  font-size: 15px;
-  color: #333;
+@media screen and (max-width: 768px) {
+  .top-service-item {
+    padding: 20px 0;
+    border-top: 1px solid #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top-service-item img {
+    width: 100%;
+  }
+  .top-service-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .top-service-item p {
+    font-size: 15px;
+    color: #333;
+  }
 }
 
 /*contact*/

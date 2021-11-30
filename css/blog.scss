@@ -28,6 +28,23 @@
 }
 
 /*top-blog*/
+
+/*これがちゃんとできたやつ
+@media screen and (min-width: 769px) .top-blog .top-blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+*/
+
+
 .top-blog {
   width: 85%;
   padding: 80px 0;
@@ -40,15 +57,23 @@
 
   @media screen and (min-width: 769px) {
     .top-blog-list {
-      display: flex;
+      display: flex; /*これと*/
       flex-wrap: wrap;
       align-items: flex-start;
       margin-top: 20px;
+      justify-content: space-between;
+      /*これで、margin-rightつかわずに対象のものを均等に並べる*/
+    }
+
+    .top-service-item {
+      width: 49%;
+      margin-top: 20px;
+      display: block;
+    }
     }
 
     .top-blog-item {
       width: 30%;
-      margin-right: 20px;
     }
 
     img {
@@ -114,7 +139,7 @@
       background: #c9c9c4;
     }
   }
-}
+
 
 /*contact*/
 .top-contact {
